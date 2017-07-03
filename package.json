@@ -1,0 +1,24 @@
+{
+  "name": "why-flow",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "lint": "eslint .",
+    "flow": "flow",
+    "flow:i": "flow-typed install",
+    "precommit": "yarn lint"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^4.1.1",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-flowtype": "^2.34.1",
+    "eslint-plugin-import": "^2.6.1",
+    "flow-bin": "^0.49.1",
+    "flow-typed": "^2.1.2",
+    "husky": "^0.14.2"
+  },
+  "repository": "git@github.com:bigslycat/why-flow.git",
+  "author": "Pavel Tereschenko <me@pavlik.pro> (https://github.com/bigslycat)",
+  "license": "MIT"
+}

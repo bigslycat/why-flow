@@ -1,0 +1,97 @@
+parser: babel-eslint
+
+extends:
+  - airbnb-base
+  - plugin:import/errors
+  - plugin:import/warnings
+  - plugin:flowtype/recommended
+
+plugins:
+  - import
+  - flowtype
+
+env:
+  node: true
+
+parserOptions:
+  ecmaVersion: 8
+  sourceType: module
+  ecmaFeatures:
+    impliedStrict: true
+    experimentalObjectRestSpread: true
+
+rules:
+  no-console: off
+  no-unused-vars: off
+  consistent-return: off
+  import/no-extraneous-dependencies: off
+  import/no-unresolved: off
+  import/extensions: off
+
+  semi:
+    - error
+    - always
+    - omitLastInOneLineBlock: true
+
+  no-unused-expressions: off
+
+  flowtype/boolean-style:
+    - error
+    - boolean
+
+  flowtype/define-flow-type: error
+
+  flowtype/delimiter-dangle:
+    - error
+    - always-multiline
+
+  flowtype/generic-spacing:
+    - error
+    - never
+
+  flowtype/no-dupe-keys: error
+
+  flowtype/no-primitive-constructor-types: error
+
+  flowtype/no-weak-types:
+    - error
+    - any: false
+      Array: true
+      Object: false
+      Function: true
+
+  flowtype/object-type-delimiter:
+    - error
+    - comma
+
+  flowtype/require-valid-file-annotation:
+    - error
+    - never
+    - annotationStyle: block
+
+  flowtype/semi:
+    - error
+    - always
+
+  flowtype/space-after-type-colon:
+    - error
+    - always
+    - allowLineBreak: false
+
+  flowtype/space-before-generic-bracket:
+    - error
+    - never
+
+  flowtype/space-before-type-colon:
+    - error
+    - never
+
+  flowtype/type-id-match:
+    - error
+    - ^[A-Z]
+
+  flowtype/union-intersection-spacing:
+    - error
+    - always
+
+  flowtype/use-flow-type: error
